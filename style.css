@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+/* left begin */
+
+.left{
+    /* border: 1px solid red; */
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.bill{
+    display: flex;
+    flex-direction: column;
+    /* color: hsl(184, 14%, 56%); */
+}
+.billplaceholder{
+    margin: 1em 0rem 1rem 0rem;
+    padding: 0.25rem;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+    text-align: end;
+}
+.tip{
+    display: flex;
+    flex-direction: column;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+}
+.buttonsdiv{
+    margin: 1rem 0rem 1rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    gap:1em;
+
+}
+.button{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.buttonclicked{
+    background-color:hsl(186, 14%, 43%) ;
+}
+.custom{
+    font-family: 'Space Mono', monospace;
+    color: black;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 0.5rem;
+    background-color: hsl(185, 41%, 84%);
+}
+.peopleplaceholder{
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0.25rem;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    font-size: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    text-align: end;
+}
+#invalidtext{
+    color: red;
+    font-size: 0.75rem;
+    text-align: right;
+    display: none;
+}
+.invalid{
+    border: 4px solid red;
+}
+
+/* right begin */
+
+.right{
+    /* border: 1px solid red; */
+    margin: 1rem;
+    /* width: 20rem; */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+.totalTip{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7rem;
+}
+.totaltipamount{
+    font-size: 1.5rem;
+}
+
+.totalAmount{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7rem;
+}
+.initaltotalamount{
+    font-size: 1.5rem;
+}
+
+
+.tipamtperperson{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7rem;
+}
+.tipamount{
+    font-size: 1.5rem;
+}
+
+.totalamtperperson{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7rem;
+}
+.totalamount{
+    font-size: 1.5rem;
+}
+.resetbutton{
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+.line{
+    width: inherit;
+    background-color: white;
+    height: 1px;
+}
+
+.attribution{
+    font-size: 1rem;
+}
+
+@media screen and (max-width:500px){
+    body{
+        height: 100%;
+        width: fit-content;
+    }
+    .split{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .calc{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+    }
+    .left{
+        padding: 1rem;
+        margin: 0rem;
+    }
+    .right{
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+    .resetbutton{
+        margin-top: 1rem;
+        padding: 0.5rem;
+    }
+    .line{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
